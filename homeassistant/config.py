@@ -1,6 +1,5 @@
 """Module to help with parsing and generating configuration files."""
 from __future__ import annotations
-
 from collections import OrderedDict
 from collections.abc import Callable, Sequence
 from contextlib import suppress
@@ -12,11 +11,9 @@ import shutil
 from types import ModuleType
 from typing import Any
 from urllib.parse import urlparse
-
 from awesomeversion import AwesomeVersion
 import voluptuous as vol
 from voluptuous.humanize import humanize_error
-
 from . import auth
 from .auth import mfa_modules as auth_mfa_modules, providers as auth_providers
 from .const import (
